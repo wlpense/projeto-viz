@@ -17,7 +17,7 @@ const tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // Carrega os dados
-d3.csv("/dados/life-expectancy-un-vs-gdp-per-capita-wb.csv").then(data => {
+d3.csv("../dados/life-expectancy-un-vs-gdp-per-capita-wb.csv").then(data => {
     // Formata os dados
     data.forEach(d => {
         d.gdp_per_capita = +d.gdp_per_capita;

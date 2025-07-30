@@ -12,7 +12,7 @@ const svg = d3.select("#minha-vizualizacao-linhas")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // 3. Carrega e Processa os Dados
-d3.csv("/dados/life-expectancy.csv").then(data => {
+d3.csv("../dados/life-expectancy.csv").then(data => {
     
     // Converte strings para números
     data.forEach(d => {

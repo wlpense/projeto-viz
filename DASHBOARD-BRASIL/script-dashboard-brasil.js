@@ -1,5 +1,5 @@
 // Carrega os dados
-d3.csv("/dados/brasil_indicadores.csv").then(data => {
+d3.csv("../dados/brasil_indicadores.csv").then(data => {
 
     // Converte os dados para os tipos corretos
     data.forEach(d => {

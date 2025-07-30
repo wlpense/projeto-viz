@@ -49,7 +49,7 @@ gradient.append("stop")
   .attr("stop-opacity", 0);
 
 // carrega e processa os dados
-d3.csv("/dados/SDG-Africa.csv").then(data => {
+d3.csv("../dados/SDG-Africa.csv").then(data => {
   //conversão de datas e números
   const parseDate = d3.timeParse("%Y");
   data.forEach(d => {

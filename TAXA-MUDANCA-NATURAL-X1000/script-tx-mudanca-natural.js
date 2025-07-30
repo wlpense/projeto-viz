@@ -17,7 +17,7 @@ const tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // carrega e processa os dados
-d3.csv("/dados/REGION-estimates.csv").then(data => { 
+d3.csv("../dados/REGION-estimates.csv").then(data => { 
     // Formata os dados
     data.forEach(d => {
         d.year = +d.ano;

@@ -16,7 +16,7 @@ const tooltip = d3.select("body").append("div")
     .attr("class", "tooltip");
 
 // Carrega e Processa os Dados
-d3.csv("/dados/life-expectancy-with-improved-sanitation-faciltities.csv").then(data => {
+d3.csv("../dados/life-expectancy-with-improved-sanitation-faciltities.csv").then(data => {
     
     // Converte strings para números
     data.forEach(d => {

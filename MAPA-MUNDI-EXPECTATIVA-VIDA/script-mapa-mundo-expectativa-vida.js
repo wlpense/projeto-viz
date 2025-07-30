@@ -22,7 +22,7 @@ const colorScale = d3.scaleSequential(d3.interpolateInferno).domain([30, 85]);
 // Carregamento dos dados em paralelo
 Promise.all([
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"),
-    d3.csv("/dados/life_expectancy_world_by_year.csv")
+    d3.csv("../dados/life_expectancy_world_by_year.csv")
 ]).then(([worldData, lifeData]) => {
     
     const lifeDataByYearAndCountry = new Map();

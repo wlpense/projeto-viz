@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Brasil: Longevidade e Indicadores Sociais</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+    <h2>Brasil: Longevidade e Indicadores Sociais (1980-2021)</h2>
+    <h6>Fonte: OurWorldData - https://ourworldindata.org</h6>
+    <div id="dashboard" class="dashboard-container">
+        <div id="main-chart" class="main-chart-container chart"></div>
+        <div id="small-multiples" class="small-multiples-container">
+            <div id="chart-gini" class="chart"></div>
+            <div id="chart-literacy" class="chart"></div>
+            <div id="chart-health" class="chart"></div>
+        </div>
+    </div>
+    <div class="tooltip"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script-dashboard-brasil.js"></script>
+
+</body>
+</html>

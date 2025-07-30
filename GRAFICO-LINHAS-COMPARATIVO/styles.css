@@ -1,0 +1,18 @@
+body { 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.axis-label {
+    font-size: 14px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.legend-text {
+    font-size: 12px;
+    font-family: sans-serif;
+}

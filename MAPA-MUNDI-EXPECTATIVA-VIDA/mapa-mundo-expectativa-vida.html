@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa-Múndi de Expectativa de Vida ... </title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body>
+
+    <h1>Expectativa de Vida no Mundo a partir de 1950-2023</h1>
+
+    <div class="controls">
+        <label for="year-slider">Ano: <span id="year-label">1950</span></label>
+        <input type="range" id="year-slider" min="1950" max="2021" step="1" value="1950">
+    </div>
+
+    <div id="minha-vizualizacao-mapa-mundi"></div>
+    <div class="tooltip"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+
+    <script src="script-mapa-mundo-expectativa-vida.js"></script>
+
+</body>
+</html>
